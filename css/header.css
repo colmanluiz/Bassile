@@ -1,0 +1,90 @@
+.header-bg {
+  background-color: #0e0e0e;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 1200px;
+}
+
+.my-button {
+  background-color: transparent;
+  border: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 32px;
+  float: left;
+  line-height: 70px;
+  display: none;
+}
+
+.my-button:focus {
+  outline: none;
+}
+
+.header ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header ul li {
+  display: inline-block;
+  padding: 16px 0px;
+  font-size: 20px;
+}
+
+.header ul li:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.header-icones {
+  display: inline-block;
+}
+
+.header-icones img {
+  margin-left: 24px;
+}
+
+@media (max-width: 800px) {
+  .header {
+    display: grid;
+    grid-template-columns: 2;
+  }
+
+  .header-icones {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .header-icones img {
+    margin-left: 15px;
+  }
+
+  .header ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header ul.show {
+    display: flex;
+  }
+
+  .my-button {
+    display: flex;
+  }
+}

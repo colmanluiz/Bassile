@@ -9,10 +9,40 @@
     <meta name="description" content="Baixos Premium totalmente customizáveis, feitos para o cliente sob medida.">
 
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
+    <header class="header-bg">
+        <div class="header">
+            <a href="/"><img src="./Bassile 1.svg " alt="Bassile"></a>
 
+            <nav aria-label="Navegação">
+                <button class="my-button" id="my-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="nav">
+                    <li><a href="/">Produtos</a></li>
+                    <li><a href="/">Planos e Preços</a></li>
+                    <li><a href="/">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-icones">
+                <img src="./iconmonstr-magnifier-3 1.svg" alt="lupa">
+                <img src="./iconmonstr-user-20 1.svg" alt="profile">
+                <img src="./iconmonstr-shopping-cart-23 1.svg" alt="carrinho">
+            </div>
+        </div>
+    </header>
 </body>
+
+<script>
+    const button = document.getElementById("my-button");
+    const nav = document.getElementById("nav");
+
+    button.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    });
+</script>
 
 </html>
