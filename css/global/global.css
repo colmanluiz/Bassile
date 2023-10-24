@@ -1,6 +1,7 @@
 body {
   font-family: "Open Sans", Arial, sans-serif;
   margin: 0px;
+  padding-bottom: 600px;
 }
 
 h1,
@@ -14,4 +15,9 @@ ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
