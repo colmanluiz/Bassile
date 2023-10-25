@@ -1,0 +1,29 @@
+.tecnologia-bg {
+  background-color: var(--cor-12);
+}
+
+.tecnologia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tecnologia-conteudo {
+  padding: 120px 0;
+}
+
+.tecnologia-conteudo h1 {
+  margin-bottom: 24px;
+}
+
+.tecnologia-conteudo p {
+  margin-bottom: 20px;
+  max-width: 570px;
+}
+
+.tecnologia-conteudo a {
+  margin-bottom: 72px;
+}
+
+.tecnologia-diferenciais {
+  display: flex;
+}
