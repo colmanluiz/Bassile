@@ -9,14 +9,12 @@ a {
 
 .header {
   display: flex;
-  margin: 0 auto;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  max-width: 1200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .my-button {
