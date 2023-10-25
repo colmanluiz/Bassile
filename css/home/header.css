@@ -1,14 +1,15 @@
 .header-bg {
-  background-color: #0e0e0e;
+  background-color: var(--cor-12);
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--cor-0);
 }
 
 .header {
   display: flex;
+  margin: 0 auto;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
@@ -43,7 +44,6 @@ a {
 .header ul li {
   display: inline-block;
   padding: 16px 0px;
-  font-size: 20px;
 }
 
 .header ul li:hover {

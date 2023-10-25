@@ -2,8 +2,13 @@
 @import "./global/global.css";
 
 /* UTILIDADES */
-@import "./utilidades/utilidades.css";
+@import "./utilidades/componentes.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
 
 /* HOME */
 @import "./home/header.css";
 @import "./home/introducao.css";
+
+/* BAIXOS */
+@import "./baixos/baixos-lista.css";
