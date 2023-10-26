@@ -1,0 +1,75 @@
+.seguros-bg {
+  background-color: var(--cor-11);
+  padding-top: 160px;
+  padding-bottom: 250px;
+}
+
+.seguros h1 {
+  margin-bottom: 70px;
+}
+
+.seguros-conteudo {
+  display: flex;
+  gap: 40px;
+}
+
+.seguros-conteudo ul {
+  margin-bottom: 32px;
+}
+
+.seguros-conteudo li {
+  margin-top: 16px;
+}
+
+.seguros-prata {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-12);
+  color: var(--cor-3);
+  padding: 40px;
+  border-radius: 7px;
+  max-width: 560px;
+  max-height: 375px;
+  align-self: center;
+}
+
+.seguros-prata-preco {
+  text-align: end;
+  width: max-content;
+}
+
+.seguros-prata a {
+  grid-row: 3;
+  width: max-content;
+}
+
+/* OURO */
+
+.seguros-ouro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-12);
+  color: var(--cor-3);
+  padding: 40px;
+  border-radius: 7px;
+  max-width: 560px;
+  max-height: 465px;
+}
+
+.seguros-ouro-preco {
+  text-align: end;
+  width: max-content;
+}
+
+.seguros-ouro a {
+  grid-row: 3;
+  width: max-content;
+}
+
+@media (max-width: 800px) {
+  .seguros-conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+}
