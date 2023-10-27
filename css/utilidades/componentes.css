@@ -50,3 +50,21 @@
 .link:hover {
   color: var(--cor-0);
 }
+
+.botao-prata {
+  display: inline-flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7px;
+  background: var(--c10, #2e2e2e);
+  color: var(--w, #fff);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.botao-prata:hover {
+  color: var(--cor-2);
+  background: var(--cor-9);
+}
