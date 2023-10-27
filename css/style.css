@@ -17,6 +17,7 @@
 
 /* BAIXOS */
 @import "./baixos/baixos-lista.css";
+@import "./baixos/baixos.css";
 
 /* TERMOS */
 @import "./termos/termos.css";
