@@ -1,0 +1,23 @@
+/* GLOBAL */
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* UTILIDADES */
+@import "./utilidades/componentes.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
+
+/* HOME */
+@import "./home/introducao.css";
+@import "./home/tecnologia.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
+@import "./home/seguros.css";
+
+/* BAIXOS */
+@import "./baixos/baixos-lista.css";
+@import "./baixos/baixos.css";
+
+/* TERMOS */
+@import "./termos/termos.css";
