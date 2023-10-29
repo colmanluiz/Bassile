@@ -1,0 +1,32 @@
+.planos-faq-bg {
+  background: var(--cor-0);
+}
+
+.planos-faq h1 {
+  padding-top: 120px;
+}
+
+.planos-faq ul {
+  padding: 120px 0;
+}
+
+.planos-faq ul li:nth-child(odd) {
+  background-color: var(--cor-1);
+}
+
+.planos-faq ul li {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.planos-faq ul li h3 {
+  padding: 16px;
+}
+
+.planos-faq ul li h3:before {
+  content: "";
+  background-color: var(--cor-p1);
+  width: 12px;
+  height: 8px;
+  display: inline-block;
+}

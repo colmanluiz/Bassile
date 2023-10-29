@@ -22,6 +22,8 @@
   border-radius: 7px;
   background: var(--gradient, linear-gradient(180deg, #e5a40b 0%, #f90 100%));
   box-shadow: 0 1px 2px rgb(145, 139, 115);
+  max-width: max-content;
+  text-transform: uppercase;
 }
 
 .botao:hover {
@@ -51,21 +53,15 @@
   color: var(--cor-0);
 }
 
-.botao-prata {
-  display: inline-flex;
-  padding: 16px 32px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 7px;
-  background: var(--c10, #2e2e2e);
-  color: var(--w, #fff);
-  font-size: 20px;
-  font-weight: 700;
+.botao.secundario {
+  background: var(--cor-10);
+  color: var(--cor-2);
+  box-shadow: 0 1px 2px rgb(29, 28, 28);
+  max-width: max-content;
+  text-transform: uppercase;
 }
 
-.botao-prata:hover {
-  color: var(--cor-2);
+.botao.secundario:hover {
   background: var(--cor-9);
 }
 
