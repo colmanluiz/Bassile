@@ -1,0 +1,69 @@
+.planos-faq-bg {
+  background: var(--cor-0);
+}
+
+.planos-faq {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.planos-faq h1 {
+  margin-bottom: 80px;
+  width: max-content;
+}
+
+.planos-faq dl div {
+  padding: 16px;
+}
+
+.planos-faq dl div:nth-child(odd) {
+  background-color: var(--cor-1);
+  border-radius: 7px;
+}
+
+.planos-faq dt {
+  margin-bottom: 16px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.planos-faq dt::before {
+  content: "";
+  background-color: var(--cor-p1);
+  width: 12px;
+  height: 8px;
+  display: inline-block;
+}
+
+.planos-faq dt::after {
+  content: "";
+  background: url("../../img/icon/flechaCima.svg");
+  width: 16px;
+  height: 8px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.planos-faq dt:hover::after {
+  transform: rotate(180deg);
+}
+
+.planos-faq dd {
+  padding-left: 24px;
+  max-width: 100ch;
+}
+
+@media (max-width: 800px) {
+  .planos-faq {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .planos-faq h1 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+  }
+}

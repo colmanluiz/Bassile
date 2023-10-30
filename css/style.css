@@ -13,11 +13,17 @@
 @import "./home/tecnologia.css";
 @import "./home/parceiros.css";
 @import "./home/depoimento.css";
-@import "./home/seguros.css";
+@import "./home/planos.css";
 
 /* BAIXOS */
 @import "./baixos/baixos-lista.css";
 @import "./baixos/baixos.css";
+@import "./baixos/harley.css";
+@import "./baixos/musicman.css";
 
 /* TERMOS */
 @import "./termos/termos.css";
+
+/* PLANOS */
+@import "./planos/planos-faq.css";
+@import "./planos/planos-vantagens.css";

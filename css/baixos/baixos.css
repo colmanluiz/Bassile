@@ -18,49 +18,51 @@
   margin-top: 60px;
 }
 
-.produtos-harley-conteudo h2 {
-  margin-bottom: 20px;
-}
-
-.produtos-harley-conteudo p {
-  margin-bottom: 40px;
-}
-
-.produtos-harley-conteudo ul {
-  margin-bottom: 40px;
-}
-
-.produtos-harley-conteudo ul img {
-  width: 24px;
-}
-
-.produtos-harley-conteudo li {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-/* MusicMan */
+.produtos-harley-conteudo h2,
 .produtos-musicman-conteudo h2 {
   margin-bottom: 20px;
 }
 
+.produtos-harley-conteudo p,
 .produtos-musicman-conteudo p {
   margin-bottom: 40px;
 }
 
+.produtos-harley-conteudo ul,
 .produtos-musicman-conteudo ul {
   margin-bottom: 40px;
 }
 
+.produtos-harley-conteudo ul img,
 .produtos-musicman-conteudo ul img {
   width: 24px;
 }
 
+.produtos-harley-conteudo li,
 .produtos-musicman-conteudo li {
   display: flex;
   gap: 16px;
   align-items: center;
   margin-bottom: 8px;
+}
+
+@media (max-width: 800px) {
+  .baixos-produtos h1 {
+    font-size: 1.75rem;
+  }
+
+  .produtos-harley,
+  .produtos-musicman {
+    grid-template-columns: 1fr;
+  }
+
+  .produtos-harley-conteudo p,
+  .produtos-musicman-conteudo p {
+    margin-bottom: 30px;
+  }
+
+  .produtos-harley-conteudo ul,
+  .produtos-musicman-conteudo ul {
+    margin-bottom: 30px;
+  }
 }

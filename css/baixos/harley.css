@@ -1,0 +1,60 @@
+.harley {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* imagem */
+.harley-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* conteudo */
+.harley-conteudo p {
+  margin-bottom: 20px;
+}
+
+.harley-conteudo-descricao {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.harley-conteudo h2 {
+  margin-top: 60px;
+}
+
+.harley-conteudo-descricao li {
+  display: flex;
+  gap: 8px;
+  padding: 2px 10px;
+  background-color: var(--cor-12);
+  width: max-content;
+  margin-top: 10px;
+  border-radius: 7px;
+}
+
+.harley-conteudo-vantagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 8px;
+  background-color: var(--cor-12);
+  padding: 30px;
+  gap: 20px;
+  border-radius: 7px;
+}
+
+.harley-conteudo-vantagens li img {
+  width: 24px;
+}
+
+.harley-conteudo-vantagens li h3 {
+  margin-top: 8px;
+}
+
+.harley-conteudo-vantagens li p {
+  max-width: 25ch;
+  margin-top: 8px;
+}
