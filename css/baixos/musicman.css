@@ -1,0 +1,99 @@
+.musicman {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* imagem */
+.musicman-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.musicman-img img {
+  flex: 1;
+  min-width: 200px;
+}
+
+.musicman-img img:first-child {
+  min-width: 100%;
+}
+
+/* conteudo */
+.musicman-conteudo p {
+  margin-bottom: 20px;
+}
+
+.musicman-conteudo-descricao {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.musicman-conteudo h2 {
+  margin-top: 60px;
+}
+
+.musicman-conteudo-descricao li {
+  display: flex;
+  gap: 8px;
+  padding: 2px 10px;
+  background-color: var(--cor-12);
+  width: max-content;
+  margin-top: 10px;
+  border-radius: 7px;
+}
+
+.musicman-conteudo-vantagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 8px;
+  background-color: var(--cor-12);
+  padding: 30px;
+  gap: 20px;
+  border-radius: 7px;
+}
+
+.musicman-conteudo-vantagens li img {
+  width: 24px;
+}
+
+.musicman-conteudo-vantagens li h3 {
+  margin-top: 8px;
+}
+
+.musicman-conteudo-vantagens li p {
+  max-width: 25ch;
+  margin-top: 8px;
+}
+
+#musicman-titulo .titulo p {
+  text-transform: none;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .musicman {
+    grid-template-columns: 1fr;
+  }
+
+  .musicman-img {
+    grid-row: 2;
+  }
+  .musicman-conteudo h2 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .musicman-conteudo-descricao {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .musicman-conteudo-vantagens {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

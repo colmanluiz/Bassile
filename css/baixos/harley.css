@@ -7,8 +7,18 @@
 
 /* imagem */
 .harley-img {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.harley-img img {
+  flex: 1;
+  min-width: 200px;
+}
+
+.harley-img img:first-child {
+  min-width: 100%;
 }
 
 /* conteudo */
@@ -57,4 +67,33 @@
 .harley-conteudo-vantagens li p {
   max-width: 25ch;
   margin-top: 8px;
+}
+
+#harley-titulo .titulo p {
+  text-transform: none;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .harley {
+    grid-template-columns: 1fr;
+  }
+
+  .harley-img {
+    grid-row: 2;
+  }
+  .harley-conteudo h2 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .harley-conteudo-descricao {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .harley-conteudo-vantagens {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
