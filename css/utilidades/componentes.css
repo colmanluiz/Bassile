@@ -24,12 +24,14 @@
   box-shadow: 0 1px 2px rgb(145, 139, 115);
   text-transform: uppercase;
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .botao:hover {
   background: var(
     --gradient,
-    linear-gradient(180deg, #e5a40b 0%, #f2a50c 100%)
+    linear-gradient(180deg, #e5a40b 0%, #ffb218 100%)
   );
   color: #320;
 }
