@@ -1,0 +1,56 @@
+#compra {
+  background: linear-gradient(var(--cor-11) 550px, var(--cor-1) 0px);
+}
+
+.compra {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 120px;
+}
+
+.compra-dados h2 {
+  text-transform: uppercase;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.compra-dados h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 8px;
+  background: var(--cor-p1);
+  position: absolute;
+  left: -12px;
+}
+
+.compra-produto,
+.compra-dados {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+}
+
+.compra-produto {
+  background: var(--cor-12);
+  border-radius: 7px 0 0 7px;
+}
+
+.compra-produto label {
+  background: #ccc;
+  padding: 20px;
+  display: inline-block;
+}
+
+.compra-dados {
+  background: var(--cor-0);
+  border-radius: 0 7px 7px 0;
+  display: grid;
+}
+
+.compra-conteudo {
+  padding: 20px;
+  background: #222;
+  margin: 20px 0;
+  border-radius: 7px;
+}

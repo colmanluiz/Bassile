@@ -39,14 +39,26 @@ a {
   gap: 20px;
 }
 
-.header ul li {
+.header-menu a {
   display: inline-block;
   padding: 16px 0px;
+  position: relative;
 }
 
-.header ul li:hover {
-  text-decoration: underline;
-  text-decoration-color: white;
+.header-menu a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: var(--cor-0);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover:after,
+.header-menu a.ativo::after {
+  width: 100%;
 }
 
 .header-icones {
