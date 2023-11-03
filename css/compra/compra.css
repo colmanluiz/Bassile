@@ -8,14 +8,14 @@
   padding-bottom: 120px;
 }
 
-.compra-dados h2 {
+.compra h2 {
   text-transform: uppercase;
   position: relative;
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 
-.compra-dados h2::before {
+.compra h2::before {
   content: "";
   display: inline-block;
   width: 4px;
@@ -34,12 +34,75 @@
 .compra-produto {
   background: var(--cor-12);
   border-radius: 7px 0 0 7px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 20px;
+}
+
+.compra-produto > * {
+  grid-column: 1 / -1;
+}
+
+.compra-produto > label {
+  grid-column: initial;
 }
 
 .compra-produto label {
-  background: #ccc;
-  padding: 20px;
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+  color: var(--cor-3);
+  background-color: var(--cor-10);
+  display: block;
+  padding: 12px 16px;
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  border: 1px solid transparent;
+}
+
+.compra-produto input:checked + label {
+  background: var(--cor-1);
+  color: var(--cor-12);
+}
+
+.compra-produto label::before {
+  content: "";
   display: inline-block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--cor-6);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.compra-produto input:checked + label::before {
+  border-color: var(--cor-7);
+  box-shadow: inset 0 0 0 3px var(--cor-1), inset 0 0 0 5px var(--cor-7);
+}
+
+.compra-produto label:hover {
+  background-color: var(--cor-9);
+}
+
+.compra-produto input:focus + label {
+  box-shadow: 0 0 0 2px var(--cor-p1);
+  border-color: var(--cor-10);
+}
+
+.compra-produto label span {
+  display: none;
+}
+
+.compra-produto input:checked + label span {
+  display: inline-block;
+}
+
+.compra-produto input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
 }
 
 .compra-dados {
@@ -48,9 +111,36 @@
   display: grid;
 }
 
-.compra-conteudo {
+/* .compra-conteudo {
+  display: none;
+} */
+
+.compra-conteudo h2,
+.compra-conteudo h2:nth-of-type(n + 2) {
+  margin-top: 20px;
+}
+
+#bassile:checked ~ #compra-bassile,
+#planos:checked ~ #compra-planos {
+  display: grid;
+  gap: 20px;
+}
+
+.compra-detalhes {
+  background-color: var(--cor-0);
   padding: 20px;
-  background: #222;
-  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border-radius: 7px;
+}
+
+.compra-detalhes li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.compra-detalhes li img {
+  width: 16px;
+  margin-right: 8px;
 }
